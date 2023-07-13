@@ -69,11 +69,12 @@ function App() {
         SetSecondsLeft(session * 60)
         setType(SESSION);
       }
+    }
+    if(secondsLeft === 1){
       let audio = document.getElementById("beep");
       if (audio){
         audio.play();
-      }
-    }
+      }}
   } 
 
 
